@@ -11,9 +11,8 @@ const getProductsDetails = async (id) => {
 
 const ProductDetailsPage = async ({ params }) => {
   const product = await getProductsDetails(params.id)
-  console.log("TERMÉÉÉK in product/page", product);
   return (
-    <ProductDetails />
+    <ProductDetails product={product} />
   )
 }
 

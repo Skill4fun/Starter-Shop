@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import StarRatings from 'react-star-ratings';
 
-const ProductDetails = () => {
+const ProductDetails = ({ product }) => {
+  const inStock = product?.stock >= 1;
+
+  const imgRef = useRef(null);
+
+  const setImgPreview = (url) => {
+    imgRef.current.src = url;
+  }
+
   return (
     <section className="bg-white py-10">
       <div className="container max-w-screen-xl mx-auto px-4">
@@ -9,32 +17,43 @@ const ProductDetails = () => {
           <aside>
             <div className="border border-gray-200 shadow-sm p-3 text-center rounded mb-5">
               <img
+                ref={imgRef}
                 className="object-cover inline-block"
-                src="/logo192.png"
+                src={
+                  product?.images[0]
+                    ? product?.images[0].url
+                    : '/images/default_product.png'
+                }
                 alt="Product title"
                 width="340"
                 height="340"
               />
             </div>
             <div className="space-x-2 overflow-auto text-center whitespace-nowrap">
-              <a className="inline-block border border-gray-200 p-1 rounded-md hover:border-blue-500 cursor-pointer">
-                <img
-                  className="w-14 h-14"
-                  src={"/logo192.png"}
-                  alt="Product title"
-                  width="500"
-                  height="500"
-                />
-              </a>
+              {product?.images?.map(img => (
+                <a
+                  key={img._id}
+                  className="inline-block border border-gray-200 p-1 rounded-md hover:border-blue-500 cursor-pointer"
+                  onClick={() => setImgPreview(img?.url)}
+                >
+                  <img
+                    className="w-14 h-14"
+                    src={img.url}
+                    alt="Product title"
+                    width="500"
+                    height="500"
+                  />
+                </a>
+              ))}
             </div>
           </aside>
           <main>
-            <h2 className="font-semibold text-2xl mb-4">Product title</h2>
+            <h2 className="font-semibold text-2xl mb-4">{product?.name}</h2>
 
             <div className="flex flex-wrap items-center space-x-2 mb-2">
               <div className="ratings">
                 <StarRatings
-                  rating={5}
+                  rating={product?.ratings}
                   starRatedColor="#ffb829"
                   numberOfStars={5}
                   starDimension="20px"
@@ -42,7 +61,7 @@ const ProductDetails = () => {
                   name="rating"
                 />
               </div>
-              <span className="text-yellow-500">5</span>
+              <span className="text-yellow-500">{product?.ratings}</span>
 
               <svg
                 width="6px"
@@ -56,12 +75,10 @@ const ProductDetails = () => {
               <span className="text-green-500">Verified</span>
             </div>
 
-            <p className="mb-4 font-semibold text-xl">$234</p>
+            <p className="mb-4 font-semibold text-xl">{product?.price}</p>
 
             <p className="mb-4 text-gray-500">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy
-              text ever since the 1500s.
+              {product?.description}
             </p>
 
             <div className="flex flex-wrap gap-2 mb-5">
@@ -75,18 +92,23 @@ const ProductDetails = () => {
               <li className="mb-1">
                 {" "}
                 <b className="font-medium w-36 inline-block">Stock</b>
+                {inStock ?
+                  <span className="text-green-500">In Stock</span>
+                  :
+                  <span className="text-red-500">Out of Stock</span>
+                }
               </li>
               <li className="mb-1">
                 {" "}
                 <b className="font-medium w-36 inline-block">Category:</b>
-                <span className="text-gray-500">Electonics</span>
+                <span className="text-gray-500">{product?.category}</span>
               </li>
               <li className="mb-1">
                 {" "}
                 <b className="font-medium w-36 inline-block">
                   Seller / Brand:
                 </b>
-                <span className="text-gray-500">Apple</span>
+                <span className="text-gray-500">{product?.seller}</span>
               </li>
             </ul>
           </main>
