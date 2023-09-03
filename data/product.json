@@ -1,8 +1,98 @@
-{
-  "name": "Teszt terméknév 01",
-  "description": "Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... Terméknév leírás... ",
-  "price": 199.95,
-  "seller": "Platinet SA.",
-  "stock": 500,
-  "category": "Headphones"
-}
+[
+  {
+    "name": "PLATINET CLEANING KIT FOR LCD AND TOUCH SCREENS - LIQUID 120 ML + MICROFIBER 25x25CM",
+    "description": "Cleaning set for touch screens / LCD - cloth + liquid<br /><br /><b>EFFECTIVE CLEANING OF SCREENS</b><br /><br />A special set consisting of a 125 ml liquid and a 15x18 cm wipe allows quick and effective removal of fat, dust and fingerprints. It does not leave streaks and has anti-static properties. The included brush has been microfibre, making it safe for all types of screens.",
+    "price": 199.95,
+    "seller": "Platinet SA.",
+    "stock": 500,
+    "category": "Headphones",
+    "images": [
+      {
+        "public_id:": "startershop/products/PFS-PCK05.jpg",
+        "url": "http://www.platinet.pl/zdjecia/PFS-PCK05.jpg"
+      },
+      {
+        "public_id:": "startershop/products/PFS-PCK04_.jpg",
+        "url": "http://www.platinet.pl/zdjecia/PFS-PCK04_.jpg"
+      },
+      {
+        "public_id:": "startershop/products/PFS-PCK04__.jpg",
+        "url": "http://www.platinet.pl/zdjecia/PFS-PCK04__.jpg"
+      }
+    ],
+    "reviews": [],
+    "ratings": 4.5
+  },
+  {
+    "name": "PLATINET POWER BANK 10000mAh polymer ALU BLACK [42666]",
+    "description": "Powerbank Platinet PMPB10 is high quality power source for longer outdoor trips.  The case is made of aluminum. This is high-capacity portable battery for charging electronic devices such as iPhone, iPad, iPod, smartphones, mobile phones, cameras, camcorders, MP3/MP4, GPS and other devices powered by 5 V. <br/>Rechargeable polymer battery with a capacity of up 10000mAh allows even several times to charge the device. <br/><br/>You can charge this Power bank via USB port (eg from a PC) and network 240V using adapter<br/>It is provided with 4 LED - battery level indicator<br/><br/>Parameters:<br/>- Battery type: polymer<br/>- Capacity: 10,000 mAh<br/>- Input: 5V, 2100mAh<br/>- USB output: 5V,1000mA,2100mA <br/>- Colour: black<br/>- Includes: power bank 10 000mAh, charging cable from the USB port, user manual<br/>Dimension: 70 x 110 x 15mm",
+    "price": 11.12,
+    "seller": "Platinet SA.",
+    "stock": 137,
+    "category": "Electronics",
+    "images": [
+      {
+        "public_id:": "startershop/products/PMPB10AB.jpg",
+        "url": "http://www.platinet.pl/zdjecia/PMPB10AB.jpg"
+      },
+      {
+        "public_id:": "startershop/products/PMPB10AB_.jpg",
+        "url": "http://www.platinet.pl/zdjecia/PMPB10AB_.jpg"
+      },
+      {
+        "public_id:": "startershop/products/PMPB10AB__.jpg",
+        "url": "http://www.platinet.pl/zdjecia/PMPB10AB__.jpg"
+      }
+    ],
+    "reviews": [],
+    "ratings": 4.3
+  },
+  {
+    "name": "SHARP CALCULATOR SCIENTIFIC BOX EL531THWH",
+    "description": "The EL531TH performs over 273 advanced scientific functions and utilizes a 2-line display and Multi-Line Playback to make scientific equations easier for students to solve. It is ideal for students studying general math, algebra, geometry, and trigonometry. In addition, it can be used for statistics, biology, chemistry, and general science. Hard cover protects from scratches.<br/><br/>Basic Description<br/>Display Type\t2 lines<br/>Number of Display Digits\t10<br/>Power Source\tBattery<br/>Battery Type\tAAA x1<br/>Automatic Power Down\tyes<br/>Keys\tPlastic<br/>Protective Case\tyes<br/>Dimensions\t161 x 80 x 15 mm<br/>Weight\t115 g",
+    "price": 7.68,
+    "seller": "SHARP",
+    "stock": 56,
+    "category": "Accessories",
+    "images": [
+      {
+        "public_id:": "startershop/products/SH-EL531THWH.jpg",
+        "url": "http://www.platinet.pl/zdjecia/SH-EL531THWH.jpg"
+      },
+      {
+        "public_id:": "startershop/products/SH-EL531THWH.jpg",
+        "url": "http://www.platinet.pl/zdjecia/SH-EL531THWH.jpg"
+      },
+      {
+        "public_id:": "startershop/products/SH-EL531THWH.jpg",
+        "url": "http://www.platinet.pl/zdjecia/SH-EL531THWH.jpg"
+      }
+    ],
+    "reviews": [],
+    "ratings": 4.2
+  },
+  {
+    "name": "VARR GAMING 4IN1 SET 01 MOUSE/MOUSEPAD/HEADSET/KEYBOARD SQUAD",
+    "description": "Gaming kit: mouse, keyboard, mouse pad and headset with microphone.<br /><br />VARR SQUAD VG4IN1SET01 is a set created for demanding users. The special coating of the mouse and keyboard allows a firm grip and prevents sweating of the hands even during the most demanding games. The mouse pad included in the kit increases the comfort of use regardless of the type of surface. The headset are distinguished by high sound quality and a sensitive microphone that allow you to fully devote yourself to electronic entertainment.<br /><br /><b>MOUSE</b><br /><br />The included mouse can work in four sensitivity modes - from 1200 - 3200 DPI. Additional physical buttons allow for even more convenient and personalized operation.<br /><br />Sensitivity: 1200/1600/2000/3200 DPI<br />4 colors of backlight<br />Dimensions: 129 * 81 * 41.5 mm<br />Weight: 138 g<br />Cable: 1.7 m<br />Interface: USB<br /><br /><b>MOUSE PAD</b><br /><br />Made of high quality rubberised material, it ensures a stable position and comfortable mouse navigation regardless of the type of surface the tabletop is on.<br /><br />Dimensions: 26.2 cm * 20.8 cm<br />Material: rubberised fabric<br /><br /><b>KEYBOARD</b><br /><br />The keyboard has been designed to meet the needs of the most demanding players. It is a combination of high quality housing with effective design and RGB backlight.<br /><br />RGB backlight<br />104 keys<br />Waterproof construction<br />Dimensions: 430.7 * 131 * 30 mm<br />Weight: 439 g<br />Service life: over 8 million presses<br />Interface: USB<br /><br /><b>HEADSET</b><br /><br />The modern, aggressive look with intense red backlight attracts attention and stylistically matches the accessories for players. Good-quality drivers guarantee high-quality sound, and the adjustable microphone increases the comfort of the game.<br /><br />LED Backlight<br />Operation: volume control<br />Microphone: yes<br />Connectors: 3.5mm mini jack + USB<br />Dimensions: 188 * 47 * 93 mm<br />Weight: 154 g<br />Cable: 1.8 m",
+    "price": 27.23,
+    "seller": "VARR",
+    "stock": 430,
+    "category": "Sports",
+    "images": [
+      {
+        "public_id:": "startershop/products/VG4IN1SET01.jpg",
+        "url": "http://www.platinet.pl/zdjecia/VG4IN1SET01.jpg"
+      },
+      {
+        "public_id:": "startershop/products/VG4IN1SET01_.jpg",
+        "url": "http://www.platinet.pl/zdjecia/VG4IN1SET01_.jpg"
+      },
+      {
+        "public_id:": "startershop/products/VG4IN1SET01__.jpg",
+        "url": "http://www.platinet.pl/zdjecia/VG4IN1SET01__.jpg"
+      }
+    ],
+    "reviews": [],
+    "ratings": 3.2
+  }
+]
