@@ -9,16 +9,25 @@ class APIFilters {
       ? {
         name: {
           $regex: this.queryStr.keyword,
-          $options: 'i'
+          $options: 'i',
         },
       }
       : {};
 
-    console.log(keyword);
-
     this.query = this.query.find({ ...keyword });
     return this;
   }
+
+  filter() {
+    const queryCopy = { ...this.queryStr };
+
+    const removeFields = ['keyword', 'page'];
+    removeFields.forEach((element) => delete queryCopy[element]);
+
+    this.query = this.query.find(queryCopy);
+    return this;
+  };
 }
+
 
 export default APIFilters;
