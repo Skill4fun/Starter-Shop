@@ -1,10 +1,14 @@
 'use client';
 
-import React from "react";
+import React, { useState } from "react";
 import StarRatings from "react-star-ratings";
 import { useRouter } from 'next/navigation';
+import { getPriceQueryParams } from '@/helpers/helpers';
 
 const Filters = () => {
+  const [min, setMin] = useState('');
+  const [max, setMax] = useState('');
+
   const router = useRouter();
 
   let queryParams;
@@ -36,6 +40,21 @@ const Filters = () => {
     router.push(path);
   }
 
+
+  function handleOnSubmit() {
+    event.preventDefault();
+    if (typeof window !== "undefined") {
+      queryParams = new URLSearchParams(window.location.search);
+
+      queryParams = getPriceQueryParams(queryParams, "min", min);
+      queryParams = getPriceQueryParams(queryParams, "max", max);
+
+      const path = window.location.pathname + "?" + queryParams.toString();
+      router.push(path);
+    }
+  }
+
+
   function handleCheck(checkBoxType, checkBoxValue) {
     if (typeof window !== "undefined") {
       queryParams = new URLSearchParams(window.location.search);
@@ -58,31 +77,41 @@ const Filters = () => {
       </a>
       <div className="hidden md:block px-6 py-4 border border-gray-200 bg-white rounded shadow-sm">
         <h3 className="font-semibold mb-2">Price ($)</h3>
-        <div className="grid md:grid-cols-3 gap-x-2">
-          <div className="mb-4">
-            <input
-              name="min"
-              className="appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full"
-              type="number"
-              placeholder="Min"
-            />
-          </div>
+        <form onSubmit={handleOnSubmit}>
+          <div className="grid md:grid-cols-3 gap-x-2">
 
-          <div className="mb-4">
-            <input
-              name="max"
-              className="appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full"
-              type="number"
-              placeholder="Max"
-            />
-          </div>
+            <div className="mb-4">
+              <input
+                name="min"
+                className="appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full"
+                type="number"
+                placeholder="Min"
+                value={min}
+                onChange={(e) => setMin(e.target.value)}
+              />
+            </div>
 
-          <div className="mb-4">
-            <button className="px-1 py-2 text-center w-full inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700">
-              Go
-            </button>
+            <div className="mb-4">
+              <input
+                name="max"
+                className="appearance-none border border-gray-200 bg-gray-100 rounded-md py-2 px-3 hover:border-gray-400 focus:outline-none focus:border-gray-400 w-full"
+                type="number"
+                placeholder="Max"
+                value={max}
+                onChange={(e) => setMax(e.target.value)}
+              />
+            </div>
+
+            <div className="mb-4">
+              <button
+                type='submit'
+                className="px-1 py-2 text-center w-full inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
+              >
+                Go
+              </button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
 
       <div className="hidden md:block px-6 py-4 border border-gray-200 bg-white rounded shadow-sm">
